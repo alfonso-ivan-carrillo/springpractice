@@ -19,4 +19,16 @@ public class MathController {
     public String subNums(@PathVariable int num1, @PathVariable int num2){
         return "<h2>When you subtract " + num1 + " and " + num2 + " you get: " + (num2 - num1) + "!</h2>";
     }
+
+    @GetMapping("/multiply/{num1}/and/{num2}")
+    @ResponseBody
+    public String multiplyNums(@PathVariable int num1, @PathVariable int num2){
+        return "<h2>When you multiply " + num1 + " and " + num2 + " you get: " + (num1 * num2) + "!</h2>";
+    }
+
+    @GetMapping("/divide/{num2}/by/{num1}")
+    @ResponseBody
+    public String divideNums(@PathVariable int num1, @PathVariable int num2){
+        return "<h2>When you divide " + num2 + " by " + num1 + " you get: " + (num2 / num1) + "!</h2>";
+    }
 }
