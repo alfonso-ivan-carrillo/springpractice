@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Join</title>
+    <th:block th:include="partials/navbar :: styles"></th:block>
 </head>
 <body>
-    <h1 th:text="${cohort}"></h1>
+    <th:block th:include="partials/navbar :: navbar"></th:block>
+    <div>
+        <h1 th:text="${cohort}"></h1>
 
-    <form action="/join" method="post">
-        <input type="text" name="cohort" id="cohort-ip" class="field" />
-        <button>Join Now</button>
-    </form>
-
+        <form action="/join" method="post">
+            <input type="text" name="cohort" id="cohort-ip" class="field" />
+            <button>Join Now</button>
+        </form>
+    </div>
 </body>
 </html>
