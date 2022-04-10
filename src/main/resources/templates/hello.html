@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
+    <th:block th:include="partials/navbar :: styles"></th:block>
 </head>
 <body>
+    <th:block th:include="partials/navbar :: navbar"></th:block>
     <h1>Hello, <span th:text="${name}">World</span>!</h1>
 </body>
 </html>
