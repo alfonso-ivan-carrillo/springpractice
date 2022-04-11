@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show</title>
+    <th:block th:include="partials/navbar :: styles"></th:block>
+</head>
+<body>
+    <th:block th:include="partials/navbar :: navbar"></th:block>
+    <div class="container">
+        <h1>Individual Post</h1>
+        <div>
+            <span th:text="${singlePost.id}"></span>
+            <span th:text="${singlePost.title}"></span>
+            <span th:text="${singlePost.body}"></span>
+        </div>
+    </div>
+</body>
+</html>
