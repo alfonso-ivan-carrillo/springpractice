@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ads Index</title>
+    <th:block th:include="partials/navbar :: styles"></th:block>
+</head>
+<body>
+<th:block th:include="partials/navbar :: navbar"></th:block>
+
+<div class="container">
+    <h1>Ad Index</h1>
+    <div th:each="ad : ${ads}">
+        <span th:text="${ads.id}"></span>
+
+    </div>
+</div>
+
+</body>
+</html>
